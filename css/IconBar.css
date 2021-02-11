@@ -1,3 +1,4 @@
+/* Vertical */
 .icon-bar {
   width: 90px; /* Set a specific width */
   background-color: gray; 
@@ -20,7 +21,7 @@
   background-color: #4CAF50; /* Add an active/current color */
 }
 
-
+/* Horizontal */
 .icon-bar {
   width: 100%; /* Full-width */
   background-color: #555; /* Dark-grey background */
