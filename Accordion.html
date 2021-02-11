@@ -1,0 +1,38 @@
+</style>
+</head>
+<body>
+
+<h2>Accordion</h2>
+<button class="accordion">Section 1</button>
+<div class="panel">
+	<link rel="stylesheet" type="text/css" href="css/Accordion.css">
+  <p>Genius is more than intellect: it is inspired instinct.</p>
+</div>
+
+<button class="accordion">Section 2</button>
+<div class="panel">
+  <p>Let go of the past, but keep the good memories.</p>
+</div>
+
+<button class="accordion">Section 3</button>
+<div class="panel">
+  <p>Reading about the past will make you understand the present and accordingly build the future.</p>
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+</boby>
+</html>
